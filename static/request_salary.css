@@ -1,0 +1,127 @@
+.req {
+    width: 1065px;
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+}
+
+.form_con {
+    width: 1065px;
+}
+
+form {
+    justify-self: center;
+    margin-top: 20px;
+}
+
+label {
+    color: rgb(51, 51, 243);
+}
+
+input {
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+label,input,select {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+option {
+    background-color: #212121;
+    color: white;
+}
+
+select {
+    border-radius: 5px;
+}
+
+.but {
+    background-color: rgb(51, 51, 243);
+    color: white;
+    border: 1px solid rgb(51, 51, 243);
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.but:hover {
+    background-color: rgb(0, 0, 131);
+    color: white;
+    border: 1px solid rgb(0, 0, 131);
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width:481px) and (max-width:767px) {
+    .head_con {
+        width: 1065px;
+    }
+
+    .req {
+        width: 1065px;
+    }
+
+
+    .form_con {
+        width: 1065px;
+    }
+
+    .fot {
+        width: 800px;
+    }
+}
+
+@media only screen and (min-width:767px) and (max-width:1024px) {
+    .head_con {
+        width: 1065px;
+    }
+
+
+   .fot {
+    width: 850px;
+   }
+}
+
+@media only screen and (min-width:1025px) and (max-width:1280px) {
+    .head_con {
+        width: 100%;
+    }
+
+    .req {
+        width: 100%;
+    }
+
+
+    .form_con {
+        width: 100%;
+    }
+
+    .fot {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:1281px) {
+    .head_con {
+        width: 100%;
+    }
+
+    .req {
+        width: 100%;
+    }
+
+
+    .form_con {
+        width: 100%;
+    }
+
+    .fot {
+        width: 100%;
+    }
+}

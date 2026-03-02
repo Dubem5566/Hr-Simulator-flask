@@ -1,0 +1,102 @@
+body {
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.ad-pas {
+    width: 100%;
+    max-width: 1200px;
+}
+
+form {
+    background-color: #0a2540 ;
+    width: 80%;
+    min-height: 400px;
+    border-radius: 15px;
+    justify-self: center;
+    margin: 2rem auto;
+}
+
+label {
+    color: white;
+    font-size: 1rem
+
+}
+
+input {
+    width: 80%;
+    height: 30px;
+    background-color: #0a2540;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+label , input {
+    margin: 1rem 1rem;
+}
+
+.admin_h2 {
+    color:white;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+
+.but {
+    display: block;
+    width: 60px;
+    height: 40px;
+    color: #0a2540;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin: 2rem auto;
+
+}
+
+.but:hover {
+    display: block;
+    width: 60px;
+    height: 40px;
+    background-color: #021a31;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid #021a31;
+    margin: 2rem auto;
+}
+
+
+@media only screen and (min-width:1024px) {
+   .ad-pas {
+    width: 100%;
+    max-width: none;
+   }
+
+   .fot {
+        width: 100%;
+        max-width: none;
+   }
+
+   
+    .foot {
+        text-align: center;
+        padding: 0 5.5rem;
+        font-size: 1rem;
+   }
+
+   label , input {
+    margin: 1rem 3rem;
+   }
+
+}
+

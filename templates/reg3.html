@@ -1,0 +1,38 @@
+{% include 'header.html' %}
+<link rel="stylesheet" href="{{url_for('static', filename='header.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='footer.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='reg3.css')}}">
+<h2 class="reg">Registration Form</h2>
+<div class="reg3_p">
+    <p class="p_tag">3/6</p>
+</div>
+<div class="form_con">
+    <form action="" method="post">
+        <h2 class="sal">Salary & Compensation</h2>
+        <label for="emp_id">Employee ID:</label>
+        <br>
+        <input class="emp_id" type="text" id="emp_id" name="emp_id" value="{{emp_id}}" readonly>
+        <br>
+        <label for="salary">Basic Salary:</label>
+        <br>
+        <input class="main" type="number" id="salary" name="Salary" value="{{salary}}" readonly>
+        <br>
+        <label for="frequency">Salary Frequency:</label>
+        <br>
+        <input class="rad" type="radio" id="frequency" name="Salary frequency" value="Monthly">
+        <label class="ra">Monthly</label>
+        <input class="rad" type="radio" id="frequency" name="Salary frequency" value="Weekly">
+        <label class="ra">Weekly</label>
+        <br>
+        <label for="Bank Name">Bank Name:</label>
+        <br>
+        <input class="main" type="text" id="Bank Name" name="Bank Name">
+        <br>
+        <Label for="Account Number">Account Number:</Label>
+        <br>
+        <input class="main" type="tel" id="Account Number" name="Account Number">
+        <br>
+        <button class="but" type="submit">Next</button>
+    </form>
+</div>
+{% include 'footer.html' %}

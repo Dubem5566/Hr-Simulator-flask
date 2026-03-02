@@ -1,0 +1,46 @@
+{% include 'home_base.html' %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='home.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='footer.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='header.css')}}">
+    <title>Home</title>
+</head>
+<body>
+      <main class="prop">
+        <div class="intro">
+            <h2 class="wel">Welcome To HR Simulator</h2>
+            <h4>A simple and interactive HR system built with Python & Flask for managing employee records and activities.</h4>
+            <h2 class="h_2">About The HR Simulator</h3>
+            <h4 class="abt-p">This HR Simulator is a mini web application that helps managers handle basic HR tasks. <br>
+               With this system, managers can add employees, view records, approve requests, and manage staff information easily. <br>
+               This project was built as part of my learning journey in Flask, Jinja2, HTML, and CSS.</p>
+        </div>
+        <h2 class="key">Key Features</h3>
+         <div class="features">
+            <ul class="list_start">
+                <li>Add New Employees - Register employees with name, department, ID, and salary.</li>
+                <li>View Employee Records - Display all stored employee details in an organized table.</li>
+                <li>Approve or Reject Requests - Handle leave, overtime, or salary-related requests.</li>
+                <li>Delete Employee - Remove specific employee records smoothly.</li>
+                <li>Clock in - Employees can clock in</li>
+                <li>Applications - Employees can apply for vacation, leave or overtime</li>
+                <li>Request Salary - Employees can request for salary</li>
+            </ul>
+         </div>
+         <h2 class="man-h3">Manager Details</h3>
+         <div class="man_con">
+          {% for k,v in admin_logs.items() %}
+            <div class="man1">
+                <p> Manager {{loop.index}}</p>
+                <p>Username : {{k}}</p>
+                <p>Password : {{v}}</p>
+            </div>
+          {% endfor %}
+         </div>
+      </main>
+    </header>
+    {% include 'footer.html' %}
+</body>
+</html>

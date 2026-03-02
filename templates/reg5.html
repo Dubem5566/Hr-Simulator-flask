@@ -1,0 +1,38 @@
+{% include 'header.html' %}
+<link rel="stylesheet" href="{{url_for('static', filename='header.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='footer.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='reg4.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='reg5.css')}}">
+<h2 class="reg">Registration Form</h2>
+<div class="ptag">
+    <p class="p_tag">5/6</p>
+</div>
+<div class="form_con">
+    <form action="" method="post">
+        <h2 class="add">Emergency Contact</h2>
+        <br>
+        <label for="full name">Full Name:</label>
+        <br>
+        <input type="text" id="full name" name="Name">
+        <br>
+        <label for="relationship">Relationship:</label>
+        <br>
+        <select name="Relationship" id="relationship">
+            <option value="Parent">Parent</option>
+            <option value="Guardian">Guardian</option>
+            <option value="Friend">Friend</option>
+            <option value="Other">Other</option>
+        </select>
+        <br>
+        <label for="number">Phone Number:</label>
+        <br>
+        <input type="tel" id="number" name="Number">
+        <br>
+        <label for="address">Address:</label>
+        <br>
+        <input type="text" id="address" name="Kin Address">
+        <br>
+        <button class="but" type="submit">Next</button>
+    </form>
+</div>
+{% include 'footer.html' %}

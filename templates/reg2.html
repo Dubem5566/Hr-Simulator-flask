@@ -1,0 +1,35 @@
+{% include 'header.html' %}
+<link rel="stylesheet" href="{{url_for('static', filename='header.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='footer.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='reg2.css')}}">
+<h2 class="reg">Registration Form</h2>
+<div class="ptag">
+   <p class="p_tag">2/6</p>
+</div>
+<div class="form_con">
+ <form action="" method="post">
+    <h2 class="emp">Employment Details</h2>
+    <label for="department">Department:</label>
+    <br>
+    <select name="department" id="department">
+        <option value="Tech">Tech department</option>
+        <option value="Marketing">Marketing department</option>
+    </select>
+    <br>
+
+    <label for="employment type">Employment type:</label>
+    <br>
+    <input class="emp_type" type="radio" id="employment type" name="employment type" value="Full-time">
+    <label class="emp_lab">Full-time</label>
+    <input class="emp_type" type="radio" id="employment type" name="employment type" value="Part-time">
+    <label class="emp_lab">Part-time</label>
+    <input class="emp_type" type="radio" id="employment type" name="employment type" value="contract">
+    <label class="emp_lab">Contract</label>
+    <input class="emp_type" type="radio" id="employment type" name="employment type" value="internship">
+    <label class="emp_lab">Internship</label>
+    <br>
+    <button class="bu" type="submit">Next</button>
+ </form>
+</div>
+
+{% include 'footer.html' %}

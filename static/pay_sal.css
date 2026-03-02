@@ -1,0 +1,77 @@
+.bu {
+    width: 45px;
+}
+
+.bu:hover {
+    width: 45px;
+}
+
+@media only screen and (max-width:480px) {
+
+    table {
+        width: 95%;
+    }
+    
+    .but {
+        width: 50px
+    }
+
+    .bu {
+        margin: 0.2rem 0.2rem;
+    }
+
+    .bu:hover {
+        margin: 0.2rem 0.2rem;
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:767px) {
+    table {
+        width: 95%;
+    }
+    .but {
+        width: 50px
+    }
+
+    .bu {
+        margin: 0.2rem 0.5rem;
+    }
+
+    .bu:hover {
+        margin: 0.2rem 0.5rem;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    table {
+        width: 95%;
+    }
+
+    .but {
+        width: 50px
+    }
+
+    .bu {
+        width : 70px ;
+        margin: 0.2rem 0.5rem;
+    }
+
+    .bu:hover {
+        width: 70px;
+        margin: 0.2rem 0.5rem;
+    }
+}
+
+@media only screen and (min-width:1025px) {
+    .but {
+        width: 50px
+    }
+
+    .bu {
+        margin: 0.2rem 0.5rem;
+    }
+
+    .bu:hover {
+        margin: 0.2rem 0.5rem;
+    }
+}

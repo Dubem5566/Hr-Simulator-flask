@@ -1,0 +1,38 @@
+{% include 'header.html' %}
+{% include 'flash.html' %}
+<link rel="stylesheet" href="{{url_for('static', filename='header.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='footer.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='approve_req.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='pay_sal.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='flash.css')}}">
+<h2 class="emp_h2"> Pay Salary</h2>
+<div class="tab_con">
+  <table>
+    {% if content|length >= 1 %}
+    <tr>
+        <th>Employee Name</th>
+        <th>Department</th>
+        <th>ID</th>
+        <th>Clock-in</th>
+        <th>Salary Earned</th>
+    </tr>
+    {% for item in content %}
+    <tr>
+        <td>{{item.First_name}}</td>
+        <td>{{item.Department}}</td>
+        <td>{{item.I_D}}</td>
+        <td>{{item.No_of_clockin}}</td>
+        <td>{{sal}}</td>
+        <td class="but">
+            <button class="bu">
+                <a href="{{url_for('pay', index = item.id)}}">Pay</a>
+            </button>
+        </td>
+    </tr>
+    {% endfor %}
+    {% else %}
+    <p style="color: #333333; font-size: 1rem; width: 100%; max-width: none; text-align: center; padding: 1rem 0;">No pending employee</p>
+    {% endif %}
+  </table>
+</div>
+{% include 'footer.html' %}

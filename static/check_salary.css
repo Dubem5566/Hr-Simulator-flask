@@ -1,0 +1,16 @@
+.sal_h2 {
+    color: #0a2540;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+
+
+@media only screen and (min-width:1024px) {
+    .sal_h2 {
+        width: 100%;
+        max-width: none;
+    }
+}

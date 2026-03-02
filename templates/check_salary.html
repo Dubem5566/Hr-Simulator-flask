@@ -1,0 +1,29 @@
+{% include 'header.html' %}
+<link rel="stylesheet" href="{{url_for('static', filename='header.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='footer.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='check_salary.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='approve_req.css')}}">
+<h2 class="sal_h2">Salary Requests</h2>
+<div class="tab_con">
+    <table>
+        {% if requests|length >= 1 %}
+        <tr>
+            <th>Employee Name</th>
+            <th>ID</th>
+            <th>Department</th>
+            <th>Request</th>
+        </tr>
+        {% for items in requests %}
+        <tr>
+            <td>{{items.Name}}</td>
+            <td>{{items.I_D}}</td>
+            <td>{{items.Department}}</td>
+            <td>{{items.Request}}</td>
+        </tr>
+        {% endfor %}
+        {% else %}
+        <p style="color: #333333; font-size: 1rem; width: 100%; max-width: none; text-align: center; padding: 1rem 0;">There are no salary requests.</p>
+        {% endif %}
+    </table>
+</div>
+{% include 'footer.html' %}

@@ -1,0 +1,32 @@
+{% include 'header.html' %} 
+<link rel="stylesheet" href="{{url_for('static', filename='header.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='footer.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='reg4.css')}}">
+<h2 class="reg">Registration Form</h2>
+<div class="ptag">
+    <p class="p_tag">4/6</p>
+</div>
+<div class="form_con">
+    <form action="" method="post">
+        <h2 class="add">Address Details</h2>
+        <br>
+        <label for="nationality">Nationality:</label>
+        <br>
+        <input type="text" id="nationality" name="Nationality">
+        <br>
+        <label for="state">State:</label>
+        <br>
+        <input type="text" id="state" name="State">
+        <br>
+        <label for="city">City:</label>
+        <br>
+        <input type="text" id="city" name="City">
+        <br>
+        <label for="address">Street Address:</label>
+        <br>
+        <input type="text" id="address" name="Address">
+        <br>
+        <button class="but" type="submit">Next</button>
+    </form>
+</div>
+{% include 'footer.html' %}

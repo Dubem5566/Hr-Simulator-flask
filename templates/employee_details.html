@@ -1,0 +1,114 @@
+{% include 'header.html' %}
+{% include 'flash.html' %}
+<link rel="stylesheet" href="{{url_for('static', filename='header.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='footer.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='employee_details.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='flash.css')}}">
+<div class="form_con">
+  <form action="" method="post">
+    <input type="search" name="query" placeholder="Search for Employee...">
+    <button class="search" type="submit">Search</button>
+  </form>
+</div>
+<h2 class="h2_class">Employee Work Details</h2>
+<div class="table_con">
+    <table class="table1">
+        <tr>
+            <th>Name</th>
+            <th>Dept</th>
+            <th>ID</th>
+            <th>Gender</th>
+            <th>D.O.B</th>
+        </tr>
+        {% for item in content %}
+        <tr>
+            <td>{{item.First_name}}</td>
+            <td>{{item.Department}}</td>
+            <td>{{item.I_D}}</td>
+            <td>{{item.Gender}}</td>
+            <td>{{item.DOB}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+<h2 class="h2_class">Employee Contact Details</h2>
+<div class="table2_con">
+    <table>
+        <tr>
+            <th>Owner</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+        </tr>
+        {% for item in content %}
+        <tr>
+            <td>{{item.First_name}}</td>
+            <td>{{item.Phone_Number}}</td>
+            <td>{{item.Email}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+<h2 class="h2_class">Employee Salary Details</h2>
+<div class="table2_con">
+    <table>
+        <tr>
+           <th>Owner</th>
+           <th>Employment type</th>
+           <th>Basic Salary Per Day</th>
+           <th>Bank Name</th>
+           <th>Account Number</th> 
+        </tr>
+        {% for item in content %}
+        <tr>
+            <td>{{item.First_name}}</td>
+            <td>{{item.Employment_type}}</td>
+            <td>{{item.Basic_salary}}</td>
+            <td>{{item.Bank_Name}}</td>
+            <td>{{item.Account_Number}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+<h2 class="h2_class">Employee Address Details</h2>
+<div class="table2_con">
+    <table>
+        <tr>
+            <th>Owner</th>
+            <th>Nationality</th>
+            <th>State</th>
+            <th>City</th>
+            <th>Address</th>
+        </tr>
+        {% for item in content %}
+        <tr>
+            <td>{{item.First_name}}</td>
+            <td>{{item.Nationality}}</td>
+            <td>{{item.State}}</td>
+            <td>{{item.City}}</td>
+            <td>{{item.Address}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+<h2 class="h2_class">Employee Emergency Contact</h2>
+<div class="table2_con">
+    <table>
+        <tr>
+            <th>Owner</th>
+            <th>Full Name</th>
+            <th>Relationship</th>
+            <th>Phone Number</th>
+            <th>Address</th>
+        </tr>
+        {% for item in content %}
+        <tr>
+            <td>{{item.First_name}}</td>
+            <td>{{item.Next_of_kin}}</td>
+            <td>{{item.Relationship}}</td>
+            <td>{{item.number}}</td>
+            <td>{{item.addres}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% include 'footer.html' %}

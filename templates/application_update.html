@@ -1,0 +1,26 @@
+{% include 'header.html' %}
+<link rel="stylesheet" href="{{url_for('static', filename='header.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='footer.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='approve_req.css')}}">
+<h2 class="emp_h2">Employee Requests</h2>
+<div class="tab_con">
+  <table>
+    <tr>
+        <th>Name</th>
+        <th>Dept</th>
+        <th>Request</th>
+        <th>Duration</th>
+        <th>Status</th>
+    </tr>
+    {% for items in content %}
+    <tr>
+        <td>{{items.Name}}</td>
+        <td>{{items.Department}}</td>
+        <td>{{items.Request}}</td>
+        <td>{{items.Duration}}</td>
+        <td>{{items.Status}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% include 'footer.html' %}

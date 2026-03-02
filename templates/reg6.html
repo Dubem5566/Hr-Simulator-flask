@@ -1,0 +1,27 @@
+{% include 'flash.html' %}
+{% include 'header.html' %} 
+<link rel="stylesheet" href="{{url_for('static', filename='header.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='footer.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='reg4.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='reg6.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='flash.css')}}">
+<h2 class="reg">Registration Form</h2>
+<div class="ptag">
+    <p class="p_tag">6/6</p>
+</div>
+<div class="form_con">
+    <form action="" method="post">
+        <h2 class="add">System Access</h2>
+        <br>
+        <label for="username"> Create Username:</label>
+        <br>
+        <input type="text" id="username" name="Username">
+        <br>
+        <label for="password"> Create Password:</label>
+        <br>
+        <input type="text" id="password" name="Password">
+        <br>
+        <button class="but" type="submit">Next</button>
+    </form>
+</div>
+{% include 'footer.html' %}

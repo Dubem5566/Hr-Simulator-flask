@@ -1,0 +1,124 @@
+
+.form_con {
+    width: 100%;
+    max-width: 1200px;
+}
+
+form {
+    background-color: #0a2540;
+    height : 700px;
+    width: 90%;
+    justify-self: center;
+    border-radius: 10px;
+    margin: 1rem auto;
+}
+
+.other {
+    color: white;
+    font-size: 1rem;
+}
+
+input {
+    width: 80%;
+    height: 30px;
+    background-color: #0a2540;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.other,input {
+    margin: 1rem 1.5rem;
+}
+
+.radio {
+    width: 15px;
+    height: 15px;
+    margin-top: 1rem;
+    margin-right: 0;
+}
+
+.Gender {
+    color: white;
+    font-size: 1rem;
+}
+
+
+.p_tag {
+    color: #333333;
+    padding: 0.5rem 0;
+}
+
+
+.ptag {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.reg {
+    width: 100%;
+    max-width: 1200px;
+    padding: 1rem 0;
+    text-align: center;
+    color: #0a2540;
+}
+
+.bu {
+    display: block;
+    width: 60px;
+    height: 40px;
+    margin: 2rem auto;
+    color: #0a2540;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.bu:hover {
+    display: block;
+    width: 60px;
+    height: 40px;
+    margin: 2rem auto;
+    background-color: #031527;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid #031527;
+}
+
+.per {
+    text-align: center;
+    color: white;
+    padding: 1rem 0;
+}
+
+::placeholder {
+    color: rgb(243, 242, 242);
+}
+
+
+@media only screen and (min-width:1024px) {
+    .form_con {
+        width: 100%;
+        max-width: none;
+    }
+
+    .ptag {
+        width: 100%;
+        max-width: none;
+    }
+
+    .reg {
+        width: 100%;
+        max-width: none;
+    }
+
+}
+
+@media only screen and (min-width:1280px) {
+    .other,input {
+        margin: 1rem 4.5rem;
+    }
+}

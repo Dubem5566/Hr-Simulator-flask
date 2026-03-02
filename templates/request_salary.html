@@ -1,0 +1,23 @@
+{% include 'header.html' %}
+<link rel="stylesheet" href="{{url_for('static', filename='header.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='footer.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='applications.css')}}">
+<div class="form_con">
+    <form action="" method="post">
+        <h2 class="app_h2">Request Salary</h2>
+        <label for="name">Employee Name:</label>
+        <br>
+        <input type="text" id="name" name="Name" value="{{name}}" readonly>
+        <br>
+        <label for="id">ID:</label>
+        <br>
+        <input type="text" id="id" name="ID" value="{{id}}" readonly>
+        <br>
+        <label for="dept">Department:</label>
+        <br>
+        <input type="text" id="dept" name="Department" value="{{dept}}" readonly>
+        <br>
+        <button class="but" type="submit">Submit</button>
+    </form>
+</div>
+{% include 'footer.html' %}

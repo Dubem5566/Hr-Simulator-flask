@@ -1,0 +1,49 @@
+{% include 'header.html' %}
+<link rel="stylesheet" href="{{url_for('static', filename='header.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='footer.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='register.css')}}">
+<h2 class="reg">Registration Form</h2>
+<div class="ptag">
+   <p class="p_tag">1/6</p>
+</div>
+<div class="form_con">
+  <form action="/register" method="post">
+    <h2 class="per">Personal Information</h2> <br>
+    
+    <label class="other" for="First Name">First Name:</label>
+    <br>
+    <input type="text" id="First Name" placeholder="John" name="First Name">
+    <br>
+
+    <label class="other" for="Last Name">Last Name:</label>
+    <br>
+    <input type="text" id="Last Name" placeholder="Michael" name="Last Name">
+    <br>
+
+    <label class="other" for="Gender">Gender:</label>
+    <br>
+    <input class="radio" type="radio" id="Gender" name="Gender" value="Male">
+    <label class="Gender">Male</label>
+    <input class="radio" type="radio" id="Gender" name="Gender" value="Female">
+    <label class="Gender">Female</label>
+    <br>
+
+    <label class="other" for="DOB">Date of Birth:</label>
+    <br>
+    <input type="date" id="DOB" name="D.O.B">
+    <br>
+
+    <label class="other" for="Phone Number">Phone Number:</label>
+    <br>
+    <input type="tel" id="Phone Number" name="Phone Number">
+    <br>
+
+    <label class="other" for="email">Email Address:</label>
+    <br>
+    <input type="email" id="email" name="email">
+    <br>
+
+    <button class="bu" type="submit">Next</button>
+  </form>
+</div>
+{% include 'footer.html' %}

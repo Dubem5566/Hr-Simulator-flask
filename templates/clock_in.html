@@ -1,0 +1,24 @@
+{% include 'header.html' %}
+<link rel="stylesheet" href="{{url_for('static', filename='header.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='footer.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='clock_in.css')}}">
+<div class="form_con">
+  <form action="" method="post">
+    <h2 class="clock_h2">Employee Clock-In</h2>
+    <label class="emp" for="name">Employee Name:</label>
+    <br>
+    <input class="date" type="text" id="name" name="name" value="{{name}}" readonly >
+    <br>
+    <label>Current Time:</label>
+    <br>
+    <input class="date" type="datetime" name="time" value="{{time}}" readonly>
+    <br>
+    <label>Date:</label>
+    <br>
+    <input class="date" type="datetime" name="date" value="{{date}}" readonly>
+    <br>
+    <button class="butt" type="submit">Clock In</button>
+    <br>
+  </form>
+</div>
+{% include 'footer.html' %}

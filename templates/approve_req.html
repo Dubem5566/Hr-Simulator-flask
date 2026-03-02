@@ -1,0 +1,36 @@
+{% include 'flash.html' %}
+{% include 'header.html' %}
+<link rel="stylesheet" href="{{url_for('static', filename='header.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='footer.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='approve_req.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='flash.css')}}">
+<h2 class="emp_h2">Employee Requests</h2>
+<div class="tab_con">
+  <table>
+    <tr>
+        <th>Name</th>
+        <th>Dept</th>
+        <th>Request</th>
+        <th>Duration</th>
+        <th>Date</th>
+    </tr>
+    {% for details in content %}
+    <tr>
+        <td>{{details.Name}}</td>
+        <td>{{details.Department}}</td>
+        <td>{{details.Request}}</td>
+        <td>{{details.Duration}}</td>
+        <td>{{details.Application_time}}</td>
+        <td class="but">
+            <button class="bu">
+                <a href="{{url_for('Approve', index = details.id)}}">Approve</a>
+            </button>
+            <button class="bu">
+                <a href="{{url_for('Reject', index = details.id)}}">Reject</a>
+            </button>
+        </td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% include 'footer.html' %}

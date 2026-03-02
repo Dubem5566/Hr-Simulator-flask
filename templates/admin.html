@@ -1,0 +1,38 @@
+{% include 'flash.html' %}
+{% include 'header.html' %}
+<link rel="stylesheet" href="{{url_for('static', filename='admin.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='header.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='footer.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='flash.css')}}">
+<div class="h2_con">
+   <h2 class="admn_h2">ADMIN PAGE</h2>
+</div>
+<p class="ad_p">Welcome, {{name}}</p>
+<div class="admin_con">
+    <div class="admin_link">
+        <a href="{{url_for('reg_employee')}}">
+            <p class="admin_p">Register Employees</p>
+        </a>
+    </div>
+    <div class="admin_link">
+        <a href="{{url_for('approve_req')}}">
+            <p class="admin_p"> Employee Requests</p>
+        </a>
+    </div>
+    <div class="admin_link">
+        <a href="{{url_for('check_salary_requests')}}">
+            <p class="admin_p">Check Salary Requests</p>
+        </a>
+    </div>
+    <div class="admin_link">
+        <a href="{{url_for('pay_sal')}}">
+            <p class="admin_p">Pay Employee Salaries</p>
+        </a>
+    </div>
+    <div class="admin_link">
+        <a href="{{url_for('employee_details')}}">
+            <p class="admin_p">Employee Details</p>
+        </a>
+    </div>
+</div>
+{% include 'footer.html' %}

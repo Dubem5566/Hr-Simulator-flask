@@ -1,0 +1,14 @@
+option, select {
+    background-color: #0a2540;
+    color: white;
+    border: 1px solid white;
+    margin: 1rem 1.6rem;
+    font-weight: bolder;
+}
+
+
+@media only screen and (min-width:1024px) {
+    option, select {
+        margin: 1rem 2.6rem;
+    }
+}

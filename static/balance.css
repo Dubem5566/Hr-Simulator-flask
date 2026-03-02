@@ -1,0 +1,77 @@
+.bal_h2 {
+    color: #0a2540;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+
+.bal_con {
+    display: flex;
+    background-color: #0a2540;
+    height: 70px;
+    width: 95%;
+    justify-self: center;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin: 1rem auto;
+    
+}
+
+.inner_con {
+    display: column;
+    width: 50%;
+}
+
+.bal_p {
+    padding: 0 1.5rem;
+    color: white;
+}
+
+.avail {
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.8rem;
+}
+
+.bal_a {
+    display: flex;
+    padding-top: 2.7rem;
+    padding-right: 1rem;
+    color: black;
+    font-weight: 50;
+    font-size: 0.8rem;
+}
+
+.trans_con {
+    display:flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #333333;
+    border-top: 1px solid #333333;
+}
+
+.bal {
+    display: flex;
+    color: rgb(41, 167, 41);
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}
+
+.min {
+    display: block;
+    margin: auto 0;
+}
+
+.tran {
+    color: #333333;
+    font-size: 0.8rem;
+
+}
+
+@media only screen and (min-width:1025px) {
+    .bal_h2 {
+        width: 100%;
+        max-width: none;
+    }
+}

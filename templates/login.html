@@ -1,0 +1,22 @@
+{% include 'flash.html' %}
+{% include 'header.html' %}
+<link rel="stylesheet" href="{{url_for('static', filename='header.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='footer.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='admin_pass.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='flash.css')}}">
+<form action="" method="post">
+    <h2 class="admin_h2">EMPLOYEE LOGIN FORM</h2>
+    <br>
+    <label for="username">Enter Username:</label> 
+    <br>
+    <input type="text" id="username" name="username">
+    <br>
+
+    <label for="password">Enter Password:</label>
+    <br>
+    <input type="password" id="password" name="pass">
+    <br>
+    <button class="but" type="submit">Submit</button>
+</form>
+
+{% include 'footer.html' %}

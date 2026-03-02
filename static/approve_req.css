@@ -1,0 +1,160 @@
+.tab_con {
+    width: 100%;
+    max-width: 1200px;
+}
+
+table {
+    width: 100%;
+    justify-self: center;
+    border-collapse: collapse;
+    margin: 0 1rem;
+}
+
+th {
+    background-color: #0a2540;
+    height: 50px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: white;
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+td {
+    color: #333333;
+    text-align: center;
+    font-size: 0.7rem;
+    height: 30px;
+}
+
+td {
+    border: 1px solid #0a2540;
+    border-collapse: collapse;
+}
+
+.emp_h2 {
+    color: #0a2540;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+.but {
+    display: column;
+    justify-content: space-evenly;
+    border: 1px solid white;
+    width: 100px;
+}
+
+.bu {
+    background-color: #0a2540;
+    border: 1px solid #0a2540;
+    width: 55px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 0.2rem 0;
+}
+
+.bu:hover {
+    background-color: #001931;
+    border: 1px solid #001931;
+    cursor: pointer;
+    width: 55px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 0.2rem 0;
+}
+
+a {
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (min-width:481px) and (max-width:767px) {
+    table {
+        justify-self: center;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    table {
+        width: 80%;
+        justify-self: center;
+    }
+
+    .but {
+        display: flex;
+        width: 200px;
+        border: 1px solid white;
+    }
+    
+    .bu {
+       background-color: #0a2540;
+       border: 1px solid #0a2540;
+       width: 70px;
+       height: 25px;
+       border-radius: 5px;
+       margin: 0 0.5rem;
+}
+
+    .bu:hover {
+       background-color: #001931;
+       border: 1px solid #001931;
+       cursor: pointer;
+       width: 70px;
+       height: 25px;
+       border-radius: 5px;
+       margin: 0 0.5rem;
+}
+
+}
+
+@media only screen and (min-width:1025px) {
+    table {
+        width: 90%;
+        justify-self: center;
+    }
+
+    .tab_con {
+        width: 100%;
+        max-width: none;
+    }
+
+    .emp_h2 {
+        color: #0a2540;
+        width: 100%;
+        max-width: none;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .but {
+        border: 1px solid white;
+        width: 200px;
+    }
+    
+    .bu {
+       background-color: #0a2540;
+       border: 1px solid #0a2540;
+       width: 70px;
+       height: 25px;
+       border-radius: 5px;
+       margin: 0 0.5rem;
+    }
+
+    .bu:hover {
+       background-color: #001931;
+       border: 1px solid #001931;
+       cursor: pointer;
+       width: 70px;
+       height: 25px;
+       border-radius: 5px;
+       margin: 0 0.5rem;
+    }
+
+    td {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,78 @@
+{% include 'header.html' %}
+<link rel="stylesheet" href="{{url_for('static', filename='header.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='footer.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='applications.css')}}">
+<div class="form_con">
+    <form action="" method="post">
+        <h2 class="app_h2">Applications</h2>
+        <label for="name">Employee Name:</label>
+        <br>
+        <input type="text" id="name" name="name" value="{{name}}" readonly>
+        <br>
+        <label for="dept">Department:</label>
+        <br>
+        <input type="text" id="dept" name="dept" value="{{dept}}" readonly>
+        <br>
+        <label for="type">Application Type:</label>
+        <br>
+        <select name="Application Type" id="type">
+            <option value="Vacation">Vacation</option>
+            <option value="Leave">Leave</option>
+            <option value="Overtime">Overtime</option>
+        </select>
+        <br>
+        <label for="Duration">Duration:</label>
+        <br>
+        <div class="sel">
+          <select class="se" name="Duration" id="Duration">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+          </select>
+          <select class="se" id="Duration" name="Dur">
+                <option value="Day(s)">Day(s)</option>
+                <option value="Week(s)">Week(s)</option>
+                <option value="Month(s)">Month(s)</option>
+          </select>
+        </div>
+        <br>
+        <label for="time">Current Time:</label>
+        <br>
+        <input class="time" type="datetime" id="time" name="Time" value="{{time}}" readonly>
+        <br>
+        <label for="date">Date:</label>
+        <br>
+        <input class="time" type="datetime" id="time" name="Date" value="{{date}}" readonly>
+        <br>
+        <button class="but" type="submit">Apply</button>
+    </form>
+</div>
+{% include 'footer.html' %}

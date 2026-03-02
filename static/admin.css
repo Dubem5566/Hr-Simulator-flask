@@ -1,0 +1,116 @@
+.admin_link {
+        background-color: white;
+        width: 150px;
+        height: 100px;
+        margin: 1rem;
+        border-radius: 1rem;
+        border: 1px solid #0a2540;
+    }
+
+.admin_link:hover {
+        background-color: #0a2540;
+        width: 150px;
+        height: 100px;
+        margin: 1rem;
+        border-radius: 1rem;
+        border: 1px solid #0a2540;
+        cursor: pointer;
+    }
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #0a2540;
+}
+
+.admin_p {
+    display: block;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    color: #0a2540;
+    
+}
+
+.admin_p:hover {
+    color: white;
+}
+
+.admin_con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.admn_h2 {
+    color: #0a2540;
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+
+.h2_con {
+    width: 100%;
+    text-align: center;
+}
+
+.ad_p {
+    display: flex;
+    font-style: italic;
+    font-weight: lighter;
+    color: #0a2540;
+    padding: 1rem 1rem;
+}
+
+@media only screen and (max-width:480px) {
+    .admin_link {
+        background-color: white;
+        width: 150px;
+        height: 100px;
+        margin: 1rem;
+        border-radius: 1rem;
+        border: 1px solid #0a2540;
+    }
+
+.admin_link:hover {
+        background-color: #0a2540;
+        width: 150px;
+        height: 100px;
+        margin: 1rem;
+        border-radius: 1rem;
+        border: 1px solid #0a2540;
+        cursor: pointer;
+    }
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .admin_link {
+        width: 200px;
+    }
+
+    .admin_link:hover {
+        width: 200px;
+    }
+
+    .admin_p {
+        padding: 2rem 1rem;
+    }
+}
+
+@media only screen and (min-width:1025px) {
+    .admin_link {
+        width: 300px;
+    }
+
+    .admin_link:hover {
+        width: 300px;
+    }
+
+    .admin_p {
+        padding: 2.5rem 1rem;
+    }
+}
+
+

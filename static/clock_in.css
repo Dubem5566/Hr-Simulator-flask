@@ -1,0 +1,92 @@
+label {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #0a2540;
+    padding-top: 1rem;
+    padding-bottom: 0;
+}
+
+.clock_h2 {
+    color: #0a2540;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}
+
+
+.butt {
+    display: block;
+    justify-self: center;
+    background-color: #0a2540;
+    color: white;
+    border: 1px solid #0a2540;
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+    margin: 2rem auto;
+}
+
+.butt:hover {
+    background-color: #001931;
+    color: white;
+    border: 1px solid #001931;
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+    margin: 2rem auto;
+    cursor: pointer;
+}
+
+.p {
+    display: block;
+    color: #333333;
+    margin: auto auto;
+    text-align: center;
+}
+
+
+.form_con {
+    width: 100%;
+    max-width: 1200px;
+}
+
+form {
+    width: 90%;
+    height: auto;
+    border: 1px solid #0a2540;
+    border-radius: 5px;
+    justify-self: center;
+    margin: 2rem 1rem;
+}
+
+.date {
+    background-color: #0a2540;
+    border: 1px solid #0a2540;
+    color: white;
+    text-align: center;
+}
+
+input {
+    display: block;
+    background-color: #0a2540;
+    border: 1px solid #0a2540;
+    border-radius: 5px;
+    height: 25px;
+    color: white;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width:1024px) {
+    .form_con {
+        width: 100%;
+        max-width: none;
+    }
+
+    .clock_h2 {
+        width: 100%;
+        max-width: none;
+    }
+}

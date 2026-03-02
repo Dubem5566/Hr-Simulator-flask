@@ -1,0 +1,31 @@
+.flash-container {
+    width: 100%;
+    padding: 10px;
+}
+
+.flash {
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.flash-success {
+    background-color: #e6fffa;
+    color: #065f46;
+}
+
+.flash-error {
+    background-color: #fee2e2;
+    color: #7f1d1d;
+}
+
+.flash-info {
+    background-color: #e0f2fe;
+    color: #075985;
+}
+
+.flash-warning {
+    background-color: rgb(255, 241, 215);
+    color: rgb(243, 179, 59);
+}

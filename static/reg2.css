@@ -1,0 +1,103 @@
+.form_con {
+    width: 100%;
+    max-width: 1200px;
+}
+
+form {
+    background-color: #0a2540 ;
+    height : 350px;
+    width: 90%;
+    border-radius: 10px;
+    justify-self: center;
+    margin: 1rem auto;
+}
+
+label {
+    color: white;
+    font-size: 1rem;
+}
+
+.reg {
+    color: #0a2540;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.emp {
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}
+
+
+label, .emp_id, select,input {
+    margin: 1rem 1.5rem;
+}
+
+.emp_type {
+    margin-right: 0;
+}
+
+.emp_lab {
+   margin: 0 1.5rem;
+}
+
+.bu {
+    display: block;
+    width: 60px;
+    height: 40px;
+    color: #0a2540;
+    font-weight: bold;
+    margin: 2rem auto;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.bu:hover {
+    display: block;
+    width: 60px;
+    height: 40px;
+    background-color: #031527;
+    font-weight: bold;
+    margin: 2rem auto;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid #031527;
+}
+
+option, select {
+    background-color: #0a2540;
+    color: white;
+    border: 1px solid white;
+}
+
+.p_tag {
+    color: #333333;
+    
+}
+
+.ptag {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+
+@media only screen and (min-width:1024px) {
+    .ptag {
+        width: 100%;
+        max-width: none;
+    }
+
+    .form_con {
+        width: 100%;
+        max-width: none;
+    }
+
+    .reg {
+        width: 100%;
+        max-width: none;
+    }
+}

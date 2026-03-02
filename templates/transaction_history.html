@@ -1,0 +1,19 @@
+{% include 'header.html' %}
+<link rel="stylesheet" href="{{url_for('static', filename='header.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='footer.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='balance.css')}}">
+<h2 class="bal_h2">Transaction History</h2>
+{% if content|length >= 1 %}
+{% for txn in content %}
+<div class="trans_con">
+    <div class="min">
+        <p class="trans">{{txn.type}}</p>
+        <p class="tran">{{txn.date}}, {{txn.time}}</p>
+    </div>
+    <p class="bal">+{{txn.amount}}</p>
+</div>
+{% endfor %}
+{% else %}
+<p style="color: #333333; font-size: 1rem; width: 100%; max-width: none; text-align: center; padding: 1rem 0;">You haven't made any transactions yet</p>
+{% endif %}
+{% include 'footer.html' %}
