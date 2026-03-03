@@ -493,7 +493,7 @@ def bal() :
        for txn in s.transactions:
            txn.date = txn.date.strftime("%d-%m-%Y")
            txn.time = txn.time.strftime("%I:%M %p")
-           return render_template("balance.html", content = s.transactions, balance = s.Balance)
+       return render_template("balance.html", content = s.transactions, balance = s.Balance)
     else :
         return render_template("balance.html", balance = s.Balance)
 
@@ -505,7 +505,7 @@ def trans() :
        for txn in s.transactions:
            txn.date = txn.date.strftime("%d-%m-%Y")
            txn.time = txn.time.strftime("%I:%M %p")
-           return render_template("transaction_history.html", content = s.transactions)
+       return render_template("transaction_history.html", content = s.transactions)
     else:
         return render_template("transaction_history.html")
 
