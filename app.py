@@ -28,6 +28,11 @@ admin_logs = {"Philip":"65748", "Obinna":"77388"}  # Admin login details
 records = []   # For temporarily storing employee requests
 
 
+@app.route("/")
+
+def reroute() :
+    return redirect(url_for("home"))
+
 @app.route("/home")
 
 def home():
