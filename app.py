@@ -333,8 +333,9 @@ def approve_req():
     s = Applications.query.filter_by(Status = "Pending").all()
     if s :
         for i in s :
-            i.Application_time = i.Application_time.strftime("%d-%m-%Y")
-            return render_template("approve_req.html", content = s)
+            if i.Application_time :
+               i.Application_time = i.Application_time.strftime("%d-%m-%Y")
+        return render_template("approve_req.html", content = s)
     
     else :
         return render_template("empty_req.html")
@@ -408,7 +409,7 @@ def pay_sal():
     if s :
        for sa in s :
            salary = sa.Basic_salary * sa.No_of_clockin
-           return render_template("pay_sal.html", content = s, sal = salary)
+       return render_template("pay_sal.html", content = s, sal = salary)
        
     else:
         return render_template("pay_sal.html")
