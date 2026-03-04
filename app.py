@@ -67,22 +67,6 @@ def admin():
 
 def signout():
     session.clear()
-    #s = Employee.query.all()
-    #for i in s :
-        #db.session.delete(i)
-        #db.session.commit()
-    #c = Clockin.query.all()
-    #for i in c :
-        #db.session.delete(i)
-        #db.session.commit()
-    #a = Applications.query.all()
-    #for i in a :
-        #db.session.delete(i)
-        #db.session.commit()
-    #d = Sal_req.query.all()
-    #for i in d :
-        #db.session.delete(i)
-        #db.session.commit()
     return redirect(url_for("home"))
 
 @app.route("/register", methods = ["POST", "GET"])
@@ -512,5 +496,5 @@ def trans() :
 
 
 if __name__ == "__main__":
-    app.run(port=5000, debug=True)
+    app.run(port=5000)
 
