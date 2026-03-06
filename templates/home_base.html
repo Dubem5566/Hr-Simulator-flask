@@ -7,8 +7,16 @@
 </head>
 <body>
     <div class="header">
-        <a href="{{url_for('admin_login')}}">Admin</a>
-        <h2>HR SIMULATOR</h2>
-        <a href="{{url_for('login')}}">Login</a>
+        <div class="title_con">
+            <h2 class="titl">HR Simulator</h2>
+        </div>
+        <div class="link">
+            <a class="emp" href="{{url_for('login')}}">
+                <p class="empp">Employee Login</p>
+            </a>
+            <a class="emp" href="{{url_for('admin_login')}}">
+                <p class="empp">Admin</p>
+            </a>
+        </div>
     </div>
 </body>

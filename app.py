@@ -10,14 +10,16 @@ from models import db, Applications
 from models import db, Sal_req
 import random
 import string
+from dotenv import load_dotenv # type: ignore
 import os
+load_dotenv()
+
 
 app = Flask(__name__)
 # Session Secret Key
 app.secret_key = "my_secret_key_123"
 # For creating database path
-basedir = os.path.abspath(os.path.dirname(__file__))
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///" + os.path.join(basedir, "hr.db")
+app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URL")
 db.init_app(app)
 migrate = Migrate(app,db)
 
@@ -503,5 +505,5 @@ def trans() :
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=port, debug=True)
 

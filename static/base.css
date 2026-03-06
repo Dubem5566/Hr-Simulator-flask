@@ -11,20 +11,90 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #0a2540;
-    height: auto;
-    min-height: 60px;
+    width: 100%;
+    height: 60px;
     color: white;
-    padding-top: 2rem;
 }
 
-a {
-    color: white;
+.link {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 1rem;
+}
+
+.title_con {
+    display: flex;
+    justify-content: start;
+}
+
+.titl {
+    display: flex;
+    width: 180px;
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+}
+
+.emp {
+    color: #0a2540;
+}
+
+.empp {
+    padding-right: 1rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
 }
 
-h2 {
-   justify-self: center;
+@media only screen and (min-width:400px) and (max-width:480px) {
+    .link {
+        margin: 1.3rem 0;
+    }
+}
 
+@media only screen and (min-width:481px) and (max-width:767px) {
+    .link {
+        margin-top: 1.3rem ;
+        margin-right: 3rem;
+    }
+
+    .titl {
+        padding-left: 2rem;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .link {
+        margin-top: 1.3rem;
+        margin-right: 5rem;
+    }
+
+    .titl {
+        padding-left: 4rem;
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width:1025px) and (max-width:1280px) {
+    .link {
+        margin-top: 1.3rem;
+        margin-right: 7rem;
+    }
+
+    .titl {
+        padding-left: 5rem;
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width:1281px) {
+     .link {
+        margin-top: 1.3rem;
+        margin-right: 7rem;
+    }
+
+    .titl {
+        padding-left: 5rem;
+        width: 300px;
+    }
 }

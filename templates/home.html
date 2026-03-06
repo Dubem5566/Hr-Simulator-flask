@@ -8,37 +8,90 @@
     <title>Home</title>
 </head>
 <body>
-      <main class="prop">
-        <div class="intro">
-            <h2 class="wel">Welcome To HR Simulator</h2>
-            <h4>A simple and interactive HR system built with Python & Flask for managing employee records and activities.</h4>
-            <h2 class="h_2">About The HR Simulator</h3>
-            <h4 class="abt-p">This HR Simulator is a mini web application that helps managers handle basic HR tasks. <br>
-               With this system, managers can add employees, view records, approve requests, and manage staff information easily. <br>
-               This project was built as part of my learning journey in Flask, Jinja2, HTML, and CSS.</p>
+      <div class="hero_con">
+        <div class="writeup_con">
+            <h2 class="title">Employee Management Made Simple</h2>
+            <p class="writeup">Hr Simulator is a simple employee management system that allows staff to clock in, submit requests and helps HR manage approvals easily.</p>
+            <div class="but">
+              <a class="lin" href="{{url_for('login')}}">
+                <div class="button">
+                    <p class="but_txt">Employee Login</p>
+                </div>
+              </a>
+              <a class="lin" href="{{url_for('admin_login')}}">
+                <div class="button">
+                    <p class="but_txt">Admin Panel</p>
+                </div>
+              </a>
+            </div>
         </div>
-        <h2 class="key">Key Features</h3>
-         <div class="features">
-            <ul class="list_start">
-                <li>Add New Employees - Register employees with name, department, ID, and salary.</li>
-                <li>View Employee Records - Display all stored employee details in an organized table.</li>
-                <li>Approve or Reject Requests - Handle leave, overtime, or salary-related requests.</li>
-                <li>Delete Employee - Remove specific employee records smoothly.</li>
-                <li>Clock in - Employees can clock in</li>
-                <li>Applications - Employees can apply for vacation, leave or overtime</li>
-                <li>Request Salary - Employees can request for salary</li>
-            </ul>
-         </div>
-         <h2 class="man-h3">Manager Details</h3>
-         <div class="man_con">
+        <div class="img_con">
+            <img src="{{url_for('static', filename='images/officework.svg')}}">
+        </div>
+      </div>
+      <h2 class="man-h3">System Features</h2>
+      <div class="main_con">
+        <div class="clockin_con">
+          <div class="clock">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+               <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+            <p class="cl">Clock In / Clock Out</p>
+          </div>
+          <div class="cl_writeup">
+            <p class="write">Employees can record their working days easily.</p>
+          </div>
+        </div>
+
+         <div class="clockin_con">
+          <div class="clock">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                 <path fill-rule="evenodd" d="M7.502 6h7.128A3.375 3.375 0 0 1 18 9.375v9.375a3 3 0 0 0 3-3V6.108c0-1.505-1.125-2.811-2.664-2.94a48.972 48.972 0 0 0-.673-.05A3 3 0 0 0 15 1.5h-1.5a3 3 0 0 0-2.663 1.618c-.225.015-.45.032-.673.05C8.662 3.295 7.554 4.542 7.502 6ZM13.5 3A1.5 1.5 0 0 0 12 4.5h4.5A1.5 1.5 0 0 0 15 3h-1.5Z" clip-rule="evenodd" />
+                 <path fill-rule="evenodd" d="M3 9.375C3 8.339 3.84 7.5 4.875 7.5h9.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625V9.375ZM6 12a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V12Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75ZM6 15a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V15Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75ZM6 18a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V18Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                 </svg>
+            <p class="req">Request Management</p>
+          </div>
+          <div class="cl_writeup">
+            <p class="write">Submit leave or other requests directly through the system.</p>
+          </div>
+        </div>
+
+        <div class="clockin_con">
+          <div class="clock">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+              <path fill-rule="evenodd" d="M9 1.5H5.625c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0 0 16.5 9h-1.875a1.875 1.875 0 0 1-1.875-1.875V5.25A3.75 3.75 0 0 0 9 1.5Zm6.61 10.936a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 14.47a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+              <path d="M12.971 1.816A5.23 5.23 0 0 1 14.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 0 1 3.434 1.279 9.768 9.768 0 0 0-6.963-6.963Z" />
+            </svg>
+            <p class="req">Admin Approvals</p>
+          </div>
+          <div class="cl_writeup">
+            <p class="write">HR can review and approve or reject employee requests.</p>
+          </div>
+        </div>
+
+         <div class="clockin_con">
+          <div class="clock">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+              <path d="M10.464 8.746c.227-.18.497-.311.786-.394v2.795a2.252 2.252 0 0 1-.786-.393c-.394-.313-.546-.681-.546-1.004 0-.323.152-.691.546-1.004ZM12.75 15.662v-2.824c.347.085.664.228.921.421.427.32.579.686.579.991 0 .305-.152.671-.579.991a2.534 2.534 0 0 1-.921.42Z" />
+              <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v.816a3.836 3.836 0 0 0-1.72.756c-.712.566-1.112 1.35-1.112 2.178 0 .829.4 1.612 1.113 2.178.502.4 1.102.647 1.719.756v2.978a2.536 2.536 0 0 1-.921-.421l-.879-.66a.75.75 0 0 0-.9 1.2l.879.66c.533.4 1.169.645 1.821.75V18a.75.75 0 0 0 1.5 0v-.81a4.124 4.124 0 0 0 1.821-.749c.745-.559 1.179-1.344 1.179-2.191 0-.847-.434-1.632-1.179-2.191a4.122 4.122 0 0 0-1.821-.75V8.354c.29.082.559.213.786.393l.415.33a.75.75 0 0 0 .933-1.175l-.415-.33a3.836 3.836 0 0 0-1.719-.755V6Z" clip-rule="evenodd" />
+            </svg>
+            <p class="req">Payment of Salary</p>
+          </div>
+          <div class="cl_writeup">
+            <p class="writ">Employees receive salary payment recorded and managed through the system.</p>
+          </div>
+        </div>
+      </div>
+      <h2 class="man-h3">Admin Details</h3>
+      <div class="man_con">
           {% for k,v in admin_logs.items() %}
             <div class="man1">
-                <p> Manager {{loop.index}}</p>
-                <p>Username : {{k}}</p>
-                <p>Password : {{v}}</p>
+                <p class="ad_p"> ADMIN {{loop.index}}</p>
+                <p class="det_p">Username : {{k}}</p>
+                <p class="det_p">Password : {{v}}</p>
             </div>
           {% endfor %}
-         </div>
+      </div>
       </main>
     </header>
     {% include 'footer.html' %}
