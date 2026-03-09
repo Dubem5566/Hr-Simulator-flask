@@ -44,6 +44,11 @@
     font-size: 0.8rem;
 }
 
+svg {
+    width: 11px;
+    color: white;
+}
+
 .trans_con {
     display:flex;
     justify-content: space-around;

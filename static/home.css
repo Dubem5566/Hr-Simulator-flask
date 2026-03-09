@@ -51,6 +51,17 @@ img {
     border-radius: 5px;
 }
 
+.button:hover {
+    background-color: #021a31;
+    width: 80px;
+    height: 25px;
+    color: white;
+    font-size: 0.6rem;
+    font-weight: normal;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+}
+
 .but_txt {
     text-align: center;
     padding: 0.3rem 0;
@@ -95,11 +106,9 @@ svg {
 
 .lin {
     color: #0a2540;
+    text-decoration : none;
 }
 
-.lin:hover {
-    color: #0a2540;
-}
 
 .write {
     font-size: 0.8rem;
@@ -220,6 +229,17 @@ svg {
     border-radius: 5px;
     }
 
+    .button:hover {
+    background-color: #021a31;
+    width: 110px;
+    height: 25px;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: normal;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+   }
+
     .but {
         margin: 1rem 0;
     }
@@ -305,6 +325,17 @@ svg {
     margin-right: 0.5rem;
     border-radius: 5px;
     }
+
+    .button:hover {
+    background-color: #021a31;
+    width: 110px;
+    height: 25px;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: normal;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+   }
 
     .but {
         margin: 1rem 0;
@@ -413,6 +444,17 @@ svg {
     margin-right: 0.5rem;
     border-radius: 5px;
     }
+
+    .button:hover {
+    background-color: #021a31;
+    width: 110px;
+    height: 25px;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: normal;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+   }
 
     .but {
         margin: 1rem 0;

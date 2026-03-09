@@ -87,19 +87,24 @@ def reg_employee():
         number = request.form["Phone Number"]
         email = request.form["email"]
 
-        employees = Employee (
-            First_name = fn,
-            Last_name = ln,
-            Gender = g,
-            DOB = dob,
-            Phone_Number = number,
-            Email = email
-        )
-        db.session.add(employees)
-        db.session.commit()
+        if len(number) != 11 :
+            flash("Phone number must be up to 11 digits", "warning")
+            return redirect(url_for("reg_employee"))
+        
+        else :
+           employees = Employee (
+             First_name = fn,
+             Last_name = ln,
+             Gender = g,
+             DOB = dob,
+             Phone_Number = number,
+             Email = email
+           )
+           db.session.add(employees)
+           db.session.commit()
 
-        session["First Name"] = fn
-        return redirect(url_for("reg_2"))
+           session["First Name"] = fn
+           return redirect(url_for("reg_2"))
 
     return render_template("register.html")
 
@@ -128,13 +133,13 @@ def Generate_id() :
     for s in search :
         if s.Department == "Tech" :
             s.I_D = f"TCH-{possible_id}"
-            s.Basic_salary = 100
+            s.Basic_salary = 10000
             db.session.commit()
             session["I.D"] = s.I_D
             session["sal"] = s.Basic_salary
         else :
             s.I_D = f"MKT-{possible_id}"
-            s.Basic_salary = 80
+            s.Basic_salary = 7000
             db.session.commit()
             session["I.D"] = s.I_D
             session["sal"] = s.Basic_salary
@@ -195,7 +200,12 @@ def reg_5 ():
         num = request.form["Number"]
         add = request.form["Kin Address"]
 
-        for s in search :
+        if len(num) != 11 :
+            flash("Phone number must be up to 11 digits", "warning")
+            return redirect(url_for("reg_5"))
+        
+        else :
+          for s in search :
             s.Next_of_kin = n 
             s.Relationship = rel 
             s.number = num 
@@ -505,5 +515,5 @@ def trans() :
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port, debug=True)
+    app.run(host="0.0.0.0", port=port)
 

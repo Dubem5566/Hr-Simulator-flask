@@ -1,5 +1,5 @@
 .admin_link {
-        background-color: white;
+        background-color: aliceblue;
         width: 150px;
         height: 100px;
         margin: 1rem;
@@ -19,11 +19,9 @@
 
 a {
     color: white;
+    text-decoration : none;
 }
 
-a:hover {
-    color: #0a2540;
-}
 
 .admin_p {
     display: block;

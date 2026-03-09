@@ -24,7 +24,6 @@ h1 {
 
 
 .head-but {
-    color: #0a2540;
     width: 80px;
     background-color: white;
     border-radius: 15px;
@@ -41,7 +40,6 @@ h1 {
 
 .head-but:hover {
     background-color: #021a31;
-    color: white;
     width: 80px;
     margin: 1rem 0;
     border-radius: 15px;
@@ -56,8 +54,8 @@ h1 {
     text-align: center;
 }
 
-a:hover {
-    color: white;
+a {
+    text-decoration : none;
 }
 
 @media only screen and (min-width:768px) and (max-width:1023px) {
